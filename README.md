@@ -1,1 +1,2 @@
 # SpringIOCAutoWireBeanInheritanceUsingXMLConfig
+## Bean Inheritance example
