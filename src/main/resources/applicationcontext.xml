@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="father" class="com.springioc.beanInheritance.beans.Father">
+		<property name="lastName" value="Bansal"></property>
+	</bean>
+
+	<bean id="child" class="com.springioc.beanInheritance.beans.Child"
+		parent="father">
+		<property name="firstName" value="Rakesh"></property>
+	</bean>
+
+	<bean id="child2" class="com.springioc.beanInheritance.beans.Child2"
+		parent="father">
+		<property name="firstName" value="Rakesh"></property>
+	</bean>
+</beans>
